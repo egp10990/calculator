@@ -1,20 +1,17 @@
-let a = 6;
-let b = 3;
-
-const add = function (a, b) {
-    return a + b;
-  };
-  
-const subtract = function (a, b) {
-    return a - b;
-  };
-  
-const sum = function (array) {
-    return array.reduce((total, current) => total + current, 0);
-  };
-  
-const multiply = function (array) {
-    return array.length
-      ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
-      : 0;
-  };
+function Solve(val) {
+    var v = document.getElementById('res');
+    v.value += val;
+ }
+ function Result() {
+    var num1 = document.getElementById('res').value;
+    var num2 = eval(num1);
+    document.getElementById('res').value = num2;
+ }
+ function Clear() {
+    var inp = document.getElementById('res');
+    inp.value = '';
+ }
+ function Back() {
+    var ev = document.getElementById('res');
+    ev.value = ev.value.slice(0,-1);
+ }
