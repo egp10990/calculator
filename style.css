@@ -5,24 +5,45 @@ body {
 #calculator {
     border-style: solid;
     padding: 50px;
-    margin-left: 550px;
-    margin-top: 120px;
+    margin-left: 500px;
+    margin-top: 60px;
     background-color: rgb(243, 57, 88);
 }
 
 .plusButton, .minusButton, .multiplicationButton, .divisionButton {
-    width: 30px;
-    margin-top: 80px;
-    background-color: rgb(243, 243, 83);
+    width: 45px;
+    margin-top: 50px;
+    background-color: rgb(243, 243, 52);
 }
 
 .oneButton, .twoButton, .threeButton, .fourButton, .fiveButton, .sixButton, 
 .sevenButton, .eightButton, .nineButton  {
-    width: 42px;
+    width: 62px;
     background-color: rgb(101, 101, 235);
 }
 
 .zeroButton, .equalButton, .clearButton {
-    width: 42px;
-    background-color: rgb(207, 58, 207);
+    width: 62px;
+    background-color: rgb(141, 42, 141);
 }
+
+
+input
+{
+width: 20px;
+background-color: rgb(255, 255, 255);
+color: white;
+border: 3px solid gray;
+	border-radius: 5px;
+	padding: 26px;
+	margin: 5px;
+	font-size: 15px;
+}
+
+#calc{
+    width: 150px;
+    border: 3px solid black;
+        border-radius: 3px;
+        padding: 20px;
+        margin: auto;
+    }
