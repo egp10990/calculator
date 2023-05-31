@@ -1,0 +1,14 @@
+body {
+    display: flex;
+}
+
+#calculator {
+    padding: 20px;
+    margin-left: 550px;
+    margin-top: 150px;
+}
+
+#containerOne {
+    border-radius: 2px;
+    border-color: black;
+}
