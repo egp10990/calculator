@@ -1,17 +1,16 @@
-function Solve(val) {
-    var v = document.getElementById('res');
-    v.value += val;
- }
- function Result() {
-    var num1 = document.getElementById('res').value;
-    var num2 = eval(num1);
-    document.getElementById('res').value = num2;
- }
- function Clear() {
-    var inp = document.getElementById('res');
-    inp.value = '';
- }
- function Back() {
-    var ev = document.getElementById('res');
-    ev.value = ev.value.slice(0,-1);
- }
+function add(a,b) {
+   r = a + b;
+   document.getElementById("screen").innerHTML = a + " + " + b + " = " + r;
+}
+function sub(a,b) {
+   r = a - b;
+   document.getElementById("screen").innerHTML = a + " - " + b + " = " + r;
+}
+function mul(a,b) {
+   r = a * b;
+   document.getElementById("screen").innerHTML = a + " * " + b + " = " + r;
+}
+function div(a,b) {
+   r = a / b;
+   document.getElementById("screen").innerHTML = a + " / " + b + " = " + r;
+}
