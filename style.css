@@ -1,64 +1,77 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif;
- }
- body{
-    display: grid;
-    height: 100vh;
-    place-items: center;
- }
- .main{
-    width: 300px;
-    height: 400px;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    border: 3px solid black;
-    border-radius: 5px; 
- }
- .main input[type='text'] {
-    width: 88%;
-    position: relative;
-    height: 80px;
-    top: 5px;
-    text-align: right;
-    padding: 3px 6px;
-    outline: none;
-    font-size: 40px;
-    border: 3px solid black;
-    display: flex;
-    margin: auto;
-    border-radius: 6px;
-    color: black;
- }
- .oneButton, .twoButton, .threeButton, .fourButton, .fiveButton, .sixButton, .sevenButton,
- .eightButton, .nineButton, .zeroButton, .clearButton, .equalsButton {
-    width:70px;
-    padding: 2px;
-    margin: 2px 0px;
-    margin-left:14px;
-    position: relative;
-    left: 13px;
-    top: 25px;
-    height: 50px;
-    font-size: 20px;
-    background-color: #eb3e94;
-    border-radius: 6px;
-    color: white;
- }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
- .plusButton, .minusButton, .multiplicationButton, .divisionButton {
-    width: 60px;
-    margin-top: 20px;
-    justify-content: space-evenly;
-    padding: 2px;
-    margin: 2px 0px;
-    position: relative;
-    left: 24px;
-    top: 20px;
-    height: 40px;
-    font-size: 20px;
-    background-color: #eb3e94;
-    border-radius: 6px;
-    color: white;
- }
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #0d5bee;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+  min-width: 300px;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  background: #ffffff;
+  min-height: 50px;
+  padding: 5px;
+  margin: 0 1px 10px;
+}
+
+.output pre {
+  text-align: right;
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  width: 288px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.output pre::-webkit-scrollbar {
+  display: none;
+}
+
+.output #upper {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input button {
+  width: calc(25% - 24px);
+  height: 50px;
+  margin: 8px 12px;
+  border-radius: 50%;
+  background-color: #e40808;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.input button:hover {
+  background-color: #db5111;
+}
+
